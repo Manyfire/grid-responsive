@@ -41,7 +41,7 @@ h1{
 
 .div-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 7px;
   border: 7px solid violet;
   border-radius: 20px;
@@ -53,13 +53,15 @@ h1{
 .posibilidad1, .posibilidad2, 
 .posibilidad3, .posibilidad4 {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
   justify-items: center;
+  gap: 5px;
 }
 
 .texto{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 1.6rem;
   margin: 5px 0;
   padding: 3px ;
@@ -76,8 +78,10 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   height: 50%;
+  
 }
 
 button:hover{
